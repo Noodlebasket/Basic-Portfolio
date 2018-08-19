@@ -1,2 +1,2 @@
 # Basic-Portfolio
-Beginnings of my portfolio.
+Beginnings of Roman Giffords' portfolio.

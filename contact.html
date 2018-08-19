@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <!-- .html for contact page, includes links to about, portfolio, contact -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Roman | Contact Me</title>
+        <link rel="shortcut icon" href="assets/images/temp_headshot.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/style-contact.css" />
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+        <!-- Complete Nav-bar with links to all pages -->
+
+            <div id="home-button">
+            <!-- Top left, has my name and links to about page -->
+                <a href="About"> Roman Gifford </a>
+
+            </div>
+
+            <nav>
+                <a href="About">About</a> |
+                <a href="Portfolio">Portfolio</a> |
+                <a href="/js/">JavaScript</a>
+            </nav>
+            
+        </header>
+        
+        <div class="contact-body">
+        <!-- Class for interactable text boxes with submit button-->
+            
+            <form action="/action_page.php">
+            <!-- 
+            Seems like a reference to js?
+            https://www.w3schools.com/tags/att_form_action.asp
+            -->
+
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John Smith">
+                <!-- Creates text box for full name -->
+            
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
+                <!-- Creates text box for email -->
+
+                <!-- 
+                NOTE:
+                Add check for valid email?
+                Add entered email to contact list?
+                After submit, send "welcome" email?
+                 -->
+            
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" placeholder="Let's grab lunch and talk business!">
+                <!-- Creates text box for a personal message -->
+                <!-- 
+                NOTE:
+                Add function (in js?) to compile submitted info as email so I can reference it?
+                Reference this page: https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+                 -->
+            
+                <input type="submit" value="Submit">
+
+            </form>
+            
+        </div>
+
+        <footer>
+            <p> Copyright&copy; </p>
+        </footer>
+
+    </body>
+
+</html>
