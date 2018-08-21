@@ -24,7 +24,6 @@
     position: relative;
     height: 200px;
     text-align: left;
-    padding-top: 0;
 }
 
 input[type=text], select {
