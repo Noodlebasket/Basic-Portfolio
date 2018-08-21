@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <!-- .html for portfolio page, includes links to about, portfolio, contact -->
+    <!-- .html for "home" about me page, includes links to about, portfolio, contact -->
     <head>
         <meta charset="utf-8" />
-        <title>Roman | Portfolio</title>
+        <title>Roman | About Me</title>
         <link rel="shortcut icon" href="assets/images/temp_headshot.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/css/style-portfolio.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style-navbar.css">
-        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style-reset.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/style-about-me.css" />
     </head>
 
     <body>
-
-        <header>
+        
+        <header id="topbar">
         <!-- Complete Nav-bar with links to all pages -->
-
-            <div id="home-button">
-            <!-- Top left, has my name and links to about page -->
-                <a href="About"> Roman Gifford </a>
-
-            </div>
+        
+            <a href="index.html" id="title">Roman Gifford<a>
+            <!--
+            NOTE:
+            How do make this a link, and customise it, without affecting other links
+            SubNOTE:
+            Fuckin video told me how. :face_palm: 
+            -->
 
             <nav>
                 <a href="About">About</a> |
                 <a href="Portfolio">Portfolio</a> |
-                <a href="/js/">JavaScript</a>
+                <a href="Contact">Contact</a>
             </nav>
-            
+                    
         </header>
         
         <div class="portfolio-body">
