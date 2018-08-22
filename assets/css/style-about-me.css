@@ -1,4 +1,9 @@
 /* Hey whoever is grading this. I'm thinking I managed to make this WAY more complicated than I needed to. Yay. I would really appreciate it if you could give me a few notes on cosolidation. Thank you! */
+*{
+    box-sizing: border-box;
+
+}
+
 body{
     background-image: url("../images/gravel.png");
     /* NOTE: css uses different image reference formatting than html */
@@ -103,26 +108,21 @@ footer{
     margin-right: auto;
     padding-bottom: 10px;
     width: 960px;
-    height: 500px;
 }
 
 #about-word{
-    position: relative;
-    left: 0;
-    top: 0;
     color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    width: 20%;
-    padding-top: 30px;
-    margin-left: 30px;
+    font-weight: 700;
+    padding: 35px 30px 10px 30px;
 }
 
 hr{ 
-    
     margin-left: 30px;
     margin-right: 30px;
     border-style: solid;
-    border-color: #777777;
+    border-color: #DFE1E0;
     border-width: 1.3px;
 }
 
@@ -131,12 +131,11 @@ hr{
     margin-left: 30px;
     margin-right: 20px;
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
     height: 200px;
     width: 200px;
 }
 
 #about-bio{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px;
 }
