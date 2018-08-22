@@ -29,6 +29,10 @@ nav a{
     text-decoration: none;
     
 }
+nav a:first-child{
+    border: none;
+    /* work on this */
+}
 
 a:hover{
     color: #4aaaa5;
@@ -52,9 +56,7 @@ a:hover{
 }
 
 #title{
-    position: absolute;
-    left: 290px;
-    top: 0;
+    float: left;
     background-color: #4aaaa5;
     color: #ffffff;
     text-decoration: none;
@@ -72,9 +74,7 @@ a:hover{
 }
 
 nav{
-    position: absolute;
-    top: 0;
-    right: 250px;
+    float: right;
     height: 80px;
     margin: 0;
     padding: 40px;

@@ -111,7 +111,6 @@ footer{
 img{
     height: 200px;
     width: 200px;
-    padding: 20px;
 }
 
 #port-word{
@@ -128,4 +127,15 @@ hr{
     border-style: solid;
     border-color: #DFE1E0;
     border-width: 1.3px;
+}
+
+#main-section{
+    position: relative;
+}
+
+.work{
+    position: absolute;
+    float: left;
+    height: 200px;
+    width: 200px;
 }
