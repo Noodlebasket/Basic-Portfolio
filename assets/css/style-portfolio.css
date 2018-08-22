@@ -131,11 +131,22 @@ hr{
 
 #main-section{
     position: relative;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100px;
+    max-width: 650px;
+    float: left;
+    border: 1px solid #ddd;
 }
 
 .work{
     position: absolute;
     float: left;
+    overflow: auto;
     height: 200px;
     width: 200px;
+}
+
+.work:nth-child(even){
+        margin-right: 40px;
 }
