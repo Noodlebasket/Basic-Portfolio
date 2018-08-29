@@ -1,91 +1,56 @@
-<!DOCTYPE html>
-<html>
-    <!-- .html for "home" about me page, includes links to about, portfolio, contact -->
-    <head>
-        <meta charset="utf-8" />
-        <title>Roman | Contact Me</title>
-        <link rel="shortcut icon" href="assets/images/temp_headshot.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/css/style-reset.css"/>
-        <link rel="stylesheet" type="text/css" href="assets/css/style-contact.css" />
-    </head>
+<!doctype html>
+<html lang="en-us">
 
-    <body>
-        
-        <header id="topbar">
-            <!-- Complete Nav-bar with links to all pages -->
-            
-            <a href="index.html" id="title">Roman Gifford<a>
-            <!--
-            NOTE:
-            How do make this a link, and customise it, without affecting other links
-            SubNOTE:
-            Fuckin video told me how. :face_palm: 
-            -->
-    
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Roman Gifford</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Roman Gifford</a>
             <nav>
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </nav>
-                        
-        </header>
-        
-        <div class="contact-container">
-        <!-- Container for interactable text boxes and submit button-->
-            
-            <p id="contact-word">Contact</p>
-            <!-- Content Header -->
-
-            <hr>
-
-            <form id="inner-box" action="/action_page.php">
-            <!-- 
-            Seems like a reference to js?
-            https://www.w3schools.com/tags/att_form_action.asp
-            -->
-                <ul>
-                <li>
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="John Smith">
-                    <!-- Creates text box for full name -->
-                </li>
-                
-                <li>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
-                    <!-- Creates text box for email -->
-                </li>
-                    <!-- 
-                    NOTE:
-                    Add check for valid email?
-                    Add entered email to contact list?
-                    After submit, send "welcome" email?
-                    -->
-                
-                <li>
-                    <label for="message">Message</label>
-                    <input type="text" id="message" name="message" placeholder="Let's grab lunch and talk business!">
-                    <!-- Creates text box for a personal message -->
-                </li>
-                    <!-- 
-                    NOTE:
-                    Add function (in js?) to compile submitted info as email so I can reference it?
-                    Reference this page: https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
-                    -->
-            
-                <input id="submit-button" type="submit" value="Submit">
-                
-                </ul>
-            
-            </form>
-            
         </div>
+    </header>
 
-        <footer>
-            <h2> Copyright&copy; </h2>
-        </footer>
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
 
-    </body>
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john.smith@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
+            </form>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
+    </footer>
+</body>
 
 </html>

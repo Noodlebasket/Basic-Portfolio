@@ -1,79 +1,64 @@
-<!DOCTYPE html>
-<html>
-    <!-- .html for "home" about me page, includes links to about, portfolio, contact -->
-    <head>
-        <meta charset="utf-8" />
-        <title>Roman | Portfolio</title>
-        <link rel="shortcut icon" href="assets/images/temp_headshot.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/css/style-reset.css"/>
-        <link rel="stylesheet" type="text/css" href="assets/css/style-portfolio.css" />
-    </head>
+<!doctype html>
+<html lang="en-us">
 
-    <body>
-        
-        <header id="topbar">
-            <!-- Complete Nav-bar with links to all pages -->
-            
-            <a href="index.html" id="title">Roman Gifford<a>
-            <!--
-            NOTE:
-            How do make this a link, and customise it, without affecting other links
-            SubNOTE:
-            Fuckin video told me how. :face_palm: 
-            -->
-    
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Roman Gifford</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Roman Gifford</a>
             <nav>
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </nav>
-                        
-        </header>
-        
-        <div class="port-container">
-        <!-- Actual page content, links to each project -->
-            
-            <p id="port-word">Portfolio</p>
-            <!-- Content Header -->
-
-            <hr>
-
-            <section id="main-section">
-
-                <div class=work>
-                    <img src="assets/images/200x200.png" alt="Hangman">
-                    <h1>Hangman</h1>
-                </div>
-
-                <div class=work>
-                    <img src="assets/images/200x200.png" alt="RPG Game">
-                    <h1>RPG Game</h1>
-                </div>
-
-                <div class=work>
-                    <img src="assets/images/200x200.png" alt="Trivia Game">
-                    <h1>Trivia Game</h1>
-                </div>
-
-                <div class=work>
-                    <img src="assets/images/200x200.png" alt="Rutgers Info Widget">
-                    <h1>Rutgers Info Widget</h1>
-                </div>
-
-                <div class=work>
-                    <img src="assets/images/200x200.png" alt="Rock Paper Scissors">
-                    <h1>Rock Paper Scissors</h1>
-                </div>
-            
-            </section>
-
         </div>
+    </header>
 
-        <footer>
-            <h2> Copyright&copy; </h2>
-        </footer>
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Portfolio</h1>
 
-    </body>
+            <div class="work">
+                <img src="assets/images/200x200.png" alt="Word Guess">
+
+                <h3>Word Guess</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/200x200.png" alt="RPG Game">
+
+                <h3>RPG Game</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/200x200.png" alt="Trivia Game">
+
+                <h3>Trivia Game</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/200x200.png" alt="Rutgers Info Widget">
+
+                <h3>Rutgers Info Widget</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/200x200.png" alt="Rock Paper Scissors">
+
+                <h3>Rock Paper Scissors</h3>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
+    </footer>
+</body>
 
 </html>
